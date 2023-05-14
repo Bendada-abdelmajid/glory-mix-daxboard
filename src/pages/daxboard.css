@@ -1,0 +1,141 @@
+.daxboard {
+max-width: 100vw;}
+
+.d-cards {
+    /* flex-direction: column; */
+    gap: 10px;
+    display: grid;
+grid-template-columns: repeat(4,1fr);
+    margin-bottom:20px;
+}
+
+.d-card {
+    padding: 13px 15px;
+    font-size: 16px;
+ text-align: right;
+   
+    text-transform: capitalize;
+  
+    --color:#ffe199;
+   width: 100%;
+   height: 100%;
+}
+.d-card:nth-child(2) {
+    
+    --color:#86c7f3;
+}
+.d-card:nth-child(3) {
+    --color:var(--bs-success);
+}
+.d-card:last-child {
+    --color:#ff8787;
+}
+.d-card .icon {
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgb(var(--bs-light-rgb));
+    color: var(--color);
+}
+.d-card .icon svg path{
+    stroke: var(--color)
+}
+.d-card h4 {
+    font-size: 31px;
+    margin-bottom: 5px;
+    color: var(--color);
+    text-align: right;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: calc(60% - 20px)  40%;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+.dax-grid {
+    display: grid;
+    grid-template-columns: repeat(3 , calc((100% / 3) - 14px));
+gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dax-grid .chart:first-child ,
+.dax-grid .top-orders{
+    grid-column: span 2;
+}
+.admin.active_nav .top{
+    grid-template-columns: calc(60% - 20px)  40%;;
+}
+.chart {
+    min-height: 250px;
+}
+
+.chart>.space-b {
+    margin-bottom: 20px;
+}
+.chart .drop-down-cont {
+    height: fit-content;
+}
+.chart .drop-down-btn {
+    gap: 20px;
+    height: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;}
+.chart .drop-down-btn span {
+    font-weight: 500;}
+.top-orders {
+ overflow: auto;
+    max-height: unset;
+}
+.top-orders .head{
+    position: sticky;
+top: 0;
+left:0;
+padding: 0 0 20px;
+}
+.top-orders tr:nth-child(even){
+ background-color:var(--bs-table-striped-bg);
+}
+
+
+@media (max-width :1250px) {
+    .dax-grid {
+       
+        grid-template-columns: repeat(2 , calc((100% / 2) - 10px));
+   
+    }
+    
+    .dax-grid .chart:first-child ,
+    .dax-grid .top-orders{
+        grid-column: span 1;
+    }
+   
+}
+
+
+@media(max-width:970px){
+   
+    .d-cards {
+       
+    grid-template-columns: repeat(2,1fr);
+     
+    }
+    
+}
+@media(max-width:780px){
+   
+   .dax-grid {
+    grid-template-columns: 100%}
+    
+}
+@media (max-width : 650px) {
+    .admin.active_nav .d-cards,
+    .admin:not(.active_nav) .d-cards{
+        grid-template-columns:100%;
+    }
+    
+}
