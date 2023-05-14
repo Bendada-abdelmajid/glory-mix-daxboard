@@ -11,7 +11,7 @@ function Login() {
   const login = async() => {
     try {
       const result = await signInWithPopup(auth, google) 
-      if(result.user.getIdTokenResult().claims.admin) {
+      if(result.user.uid === "kXSdDhl3CveATP2nBgvfPSrt4n03") {
         alert('hi ouner')
         navigate("/")
       } else {
