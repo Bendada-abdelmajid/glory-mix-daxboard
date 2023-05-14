@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain:process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGIN_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID,
-  measurementId: process.env.REACT_APP_MEASUREMENT_ID
+  apiKey: "AIzaSyD-VqjpIS9gVh_Mrva0fErKCToYcf0VOWQ",
+  authDomain: "glory-mix.firebaseapp.com",
+  projectId: "glory-mix",
+  storageBucket: "glory-mix.appspot.com",
+  messagingSenderId: "569663025057",
+  appId: "1:569663025057:web:07fb5f4ac747dcd27fa5e0",
+  measurementId: "G-M1K33QKLLT"
 };
 
 

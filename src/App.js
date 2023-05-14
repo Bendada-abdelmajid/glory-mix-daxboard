@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     try {
       const unregisterAuthObserver = onAuthStateChanged(auth, (user) => {
-        if (user) {
+        if (user.getIdTokenResult().claims.admin) {
           setUser(user);
           if(location.pathname === "/login"){
             navigate("/")
