@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Suspense} from 'react'
+import React, {useState, Suspense} from 'react'
 import Header from "../components/Header";
 import NaveBar from "../components/NaveBar";
 import AdminePages from "./pages";

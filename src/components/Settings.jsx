@@ -50,7 +50,7 @@ function Settings({openSettForm, setOpenSettForm, links}) {
           style={{ transform: `rotateY(${180 * flip}deg )` }}
         >
           <form
-            className={`form flip-card-front card ${flip == 1 ? "hidden" : ""}`}
+            className={`form flip-card-front card ${flip === 1 ? "hidden" : ""}`}
             onSubmit={submitProduct}
           >
             <div className="space-b form-head">
@@ -106,7 +106,7 @@ function Settings({openSettForm, setOpenSettForm, links}) {
           </form>
           <div
             className={`flip-card-back card center  ${
-              flip == 0 ? "hidden" : ""
+              flip === 0 ? "hidden" : ""
             }`}
           >
             <BsCheck2Circle />
