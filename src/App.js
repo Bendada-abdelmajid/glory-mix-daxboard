@@ -26,7 +26,7 @@ function App() {
       const unregisterAuthObserver = onAuthStateChanged(auth, (user) => {
         console.log(user)
       
-        if ((user && user.uid === "kXSdDhl3CveATP2nBgvfPSrt4n03") {
+        if (user && user.uid === "kXSdDhl3CveATP2nBgvfPSrt4n03") {
           setUser(user);
           if(location.pathname === "/login"){
             navigate("/")
